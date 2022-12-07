@@ -1,0 +1,7 @@
+{
+  "name": "def-civApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
