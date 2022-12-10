@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let i of news">
+      <ion-card>
+        <img alt="Silhouette of mountains" [src]="i.foto" />
+        <ion-card-header>
+          <ion-card-title>{{i.titulo}}</ion-card-title>
+          <ion-card-subtitle>{{i.fecha}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{i.contenido}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

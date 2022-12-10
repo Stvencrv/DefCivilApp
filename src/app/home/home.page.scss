@@ -1,0 +1,18 @@
+.titeContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 7%;
+    .title{
+        font-weight: bold;
+    }
+}
+
+.carousel{
+    padding: 10px;
+    img{
+        border-radius: 15px;
+    }
+}

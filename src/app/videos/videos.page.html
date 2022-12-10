@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Videos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let i of videos">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{i.titulo}}</ion-card-title>
+          <ion-card-subtitle>{{i.fecha}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <iframe width="300" height="215" src="https://www.youtube.com/embed/PMW8U0SPyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
