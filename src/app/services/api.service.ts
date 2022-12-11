@@ -24,5 +24,15 @@ export class ApiService {
   async getHostels(){
     return this.http.get('https://adamix.net/defensa_civil/def/albergues.php');
   }
+  async getMeasures(){
+    return this.http.get('https://adamix.net/defensa_civil/def/medidas_preventivas.php');
+  }
+  async getMembers(){
+    return this.http.get('https://adamix.net/defensa_civil/def/miembros.php');
+  }
+
+ async postVolunteer(volunteer: FormData) {
+  return this.http.post('https://adamix.net/defensa_civil/def/registro.php', volunteer);
+ }
 }
 

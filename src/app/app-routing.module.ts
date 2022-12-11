@@ -39,6 +39,26 @@ const routes: Routes = [
     path: 'maps',
     loadChildren: () => import('./maps/maps.module').then( m => m.MapsPageModule)
   },
+  {
+    path: 'measures',
+    loadChildren: () => import('./measures/measures.module').then( m => m.MeasuresPageModule)
+  },
+  {
+    path: 'measures-modal',
+    loadChildren: () => import('./measures-modal/measures-modal.module').then( m => m.MeasuresModalPageModule)
+  },
+  {
+    path: 'members',
+    loadChildren: () => import('./members/members.module').then( m => m.MembersPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'volunteers',
+    loadChildren: () => import('./volunteers/volunteers.module').then( m => m.VolunteersPageModule)
+  },
 ];
 
 @NgModule({

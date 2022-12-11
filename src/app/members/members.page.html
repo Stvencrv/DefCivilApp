@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Miembros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <h1 style="text-align: center; font-weight: bold; margin-top: 10%;">Miembros de la Defensa Civil</h1>
+  <ion-list>
+    <ion-item *ngFor="let i of members">
+      <ion-thumbnail slot="start" id="open-modal">
+        <img alt="Silhouette of mountains" [src]="i.foto" />
+      </ion-thumbnail>
+      <span>{{i.nombre}}<br><span style="color: rgb(140, 202, 77);">{{i.cargo}}</span></span>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

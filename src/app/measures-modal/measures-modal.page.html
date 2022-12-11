@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>Medidas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="center">
+      <img alt="Silhouette of mountains" [src]="measure.foto" />
+    </div>
+    <ion-card-header>
+      <ion-card-title>{{measure.titulo}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p style="font-size: 18px;">{{measure.descripcion}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
