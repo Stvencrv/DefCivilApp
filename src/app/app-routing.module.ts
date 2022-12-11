@@ -26,7 +26,19 @@ const routes: Routes = [
   {
     path: 'videos',
     loadChildren: () => import('./videos/videos.module').then( m => m.VideosPageModule)
-  }
+  },
+  {
+    path: 'hostels',
+    loadChildren: () => import('./hostels/hostels.module').then( m => m.HostelsPageModule)
+  },
+  {
+    path: 'hostel-modal',
+    loadChildren: () => import('./hostel-modal/hostel-modal.module').then( m => m.HostelModalPageModule)
+  },
+  {
+    path: 'maps',
+    loadChildren: () => import('./maps/maps.module').then( m => m.MapsPageModule)
+  },
 ];
 
 @NgModule({

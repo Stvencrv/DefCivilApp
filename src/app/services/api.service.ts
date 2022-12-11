@@ -21,5 +21,8 @@ export class ApiService {
   async getVideos(){
     return this.http.get('https://adamix.net/defensa_civil/def/videos.php');
   }
+  async getHostels(){
+    return this.http.get('https://adamix.net/defensa_civil/def/albergues.php');
+  }
 }
 

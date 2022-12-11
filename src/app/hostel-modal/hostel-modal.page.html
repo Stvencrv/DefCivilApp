@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>{{hostel.codigo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://cdn-icons-png.flaticon.com/512/1802/1802340.png" />
+    <ion-card-header>
+      <ion-card-title>{{hostel.edificio}}</ion-card-title>
+      <ion-card-subtitle>{{hostel.ciudad}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <h1>Cordinador: {{hostel.coordinador}}</h1>
+      <h1>Telefono: {{hostel.telefono}}</h1>
+      <h1>Capacidad: {{hostel.capacidad}}</h1>
+      <hr>
+      <h1 style="color: green;">Longitud: {{hostel.lng}}</h1>
+      <h1 style="color: green;">Latitud: {{hostel.lat}}</h1>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
